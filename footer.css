@@ -1,0 +1,135 @@
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    width: 100%;
+    min-height: 120px;
+
+    background: #191918;
+    border-top: 1px solid #3b3b39;
+    border-bottom: 1px solid #3b3b39;
+
+    display: flex;
+    align-items: center;
+
+    padding: 30px clamp(20px, 4vw, 60px);
+
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================
+   FOOTER LEFT
+========================= */
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 2vw, 22px);
+
+    width: 100%;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.footer-logo {
+    color: #f5f3ed;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(18px, 1.5vw, 22px);
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+    color: #77746e;
+
+    font-family: monospace;
+    font-size: clamp(11px, 1vw, 14px);
+    letter-spacing: 0.05em;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .site-footer {
+        min-height: 105px;
+
+        padding: 25px clamp(20px, 5vw, 40px);
+    }
+
+    .footer-left {
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+
+    .site-footer {
+        min-height: auto;
+
+        padding: 25px 20px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+    .footer-logo {
+        font-size: 19px;
+    }
+
+    .copyright {
+        font-size: 11px;
+
+        white-space: normal;
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 360px) {
+
+    .site-footer {
+        padding: 22px 16px;
+    }
+
+    .footer-logo {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+}
