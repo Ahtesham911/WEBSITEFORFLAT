@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="overall-stats.css" />
+    <link rel="stylesheet" href="flats-section.css" />
+    <link rel="stylesheet" href="amenities-section.css" />
+    <link rel="stylesheet" href="contacts.css" />
+    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <h1>KALAM'S FLAT</h1>
+        <ul>
+            <li>
+                <a href="#flats">
+                    <h3>Flats</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#amenities">
+                    <h3>amenities</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <h3>Contact</h3>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <section class="img-section">
+            <img class="background-img" src="images for project2/image2.jpg" alt="" />
+        </section>
+
+        <h3>ASANSOL , WEST BENGAL</h3>
+        <h1 class="hero-text">KALAM'S FLAT</h1>
+        <p class="bio">
+            Kalam's Flat is a comfortable and welcoming residential property designed
+            to provide a peaceful and pleasant living environment. With convenient
+            facilities and a homely atmosphere, Kalam Flat is an ideal place for
+            residents looking for comfort, convenience, and a place they can proudly
+            call home.
+        </p>
+
+        <div class="btn-group">
+            <button onclick="document.getElementById('flats').scrollIntoView()">View available flats</button>
+            <button onclick="document.getElementById('contact').scrollIntoView()">Get in touch</button>
+        </div>
+    </section>
+
+    <section class="overall-stats">
+        <div class="stats">
+            <div class="stats-sec1">
+                <h3>8</h3>
+                <h5>TOTAL FLAT</h5>
+            </div>
+            <div class="stats-sec2">
+                <h3>0</h3>
+                <h5>AVAILABLE NOW</h5>
+            </div>
+            <div class="stats-sec3">
+                <h3>G+1</h3>
+                <h5>FLOORS</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="flats-section" id="flats" aria-labelledby="flats-heading">
+        <div class="flats-heading"></div>
+
+        <!-- CSS-only filters -->
+        <!-- <div class="flat-filters" aria-label="Filter flats">
+            <input type="radio" name="flat-filter" id="all" checked>
+            <label for="all">All</label>
+            <input type="radio" name="flat-filter" id="available">
+            <label for="available">Available</label>
+            <input type="radio" name="flat-filter" id="occupied">
+            <label for="occupied">Occupied</label>
+            <input type="radio" name="flat-filter" id="reserved">
+            <label for="reserved">Reserved</label>
+        </div> -->
+
+        <div class="flat-grid">
+            <!-- Change only data-status when the availability changes. -->
+
+            <!-- FLAT-01 -->
+            <article id="FLAT-01" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="images/flat-01.jpg" alt="" />
+                    <span class="flat-number">Flat 01</span>
+                    <span class="status">Occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,150<span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - G <b>·</b> 2 bedrooms <b>·</b> 1 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A welcoming ground-floor, front-facing flat designed for
+                        comfortable everyday living. It enjoys easy access, ample natural
+                        light, and a pleasant street-facing outlook. Thoughtfully laid
+                        out, it offers a practical blend of privacy, convenience, and
+                        warmth.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Front-Facing Flat · Peaceful Neighborhood
+                            · Natural Light
+                        </p>
+                    </details>
+                    <p class="flat-action"><a href="#contact">Currently occupied</a>
+                        <!-- Enquire about this flat -->
+                    </p>
+                </div>
+            </article>
+            <!-- FLAT-01 -->
+
+            <!-- Change only data-status when the availability changes. -->
+
+            <!-- FLAT-02 -->
+            <article id="FLAT-02" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="" alt="" />
+                    <span class="flat-number">Flat 02</span>
+                    <span class="status">occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,380 <span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - G <b>·</b> 2 bedrooms <b>·</b> 1 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A comfortable ground-floor flat ideal for convenient everyday
+                        living. With easy access and a practical layout, it offers a calm,
+                        private home environment. Well suited for families, seniors, or
+                        anyone seeking a hassle-free residence.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Ground-Floor Access · Convenient Location
+                            · Senior Friendly
+                        </p>
+                    </details>
+                    <p class="flat-action">
+                        <a href="#contact">Currently occupied</a>
+                        <!-- Enquire about this flat -->
+                    </p>
+                </div>
+            </article>
+            <!-- FLAT-02 -->
+
+            <!-- Change only data-status when the availability changes. -->
+
+            <!-- FLAT-03 -->
+            <article id="FLAT-03" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="" alt="" />
+                    <span class="flat-number">Flat 03</span>
+                    <span class="status">occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,200 <span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - G <b>·</b> 2 bedrooms <b>·</b> 1 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A well-maintained ground-floor flat offering a peaceful and
+                        convenient living space. Set away from the main road, it provides
+                        added privacy and a quieter atmosphere. Its practical layout makes
+                        it a comfortable choice for everyday living.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Quiet Location · Practical Layout ·
+                            Peaceful Living
+                        </p>
+                    </details>
+                    <p class="flat-action">
+                        <a href="#contact">Currently occupied</a>
+                        <!-- Enquire about this flat -->
+                    </p>
+                </div>
+            </article>
+            <!-- FLAT-03 -->
+
+            <!-- Change only data-status when the availability changes. -->
+
+            <!-- FLAT-04 -->
+            <article id="FLAT-04" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="" alt="" />
+                    <span class="flat-number">Flat 04</span>
+                    <span class="status">occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,550 <span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - G <b>·</b> 2 bedrooms <b>·</b> 2 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A bright, front-facing ground-floor flat with an attached private
+                        space at the back. It offers easy access, a pleasant street-facing
+                        outlook, and extra room for daily use. Ideal for comfortable
+                        living with the benefit of both openness and privacy.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Private Backspace · Ground-Floor Access ·
+                            Natural Light · Extra Utility Space
+                        </p>
+                    </details>
+                    <p class="flat-action">
+                        <a href="#contact">Currently occupied</a>
+                        <!-- Reserved — join waitlist -->
+                    </p>
+                </div>
+            </article>
+            <!-- FLAT-04 -->
+
+            <!-- Change only data-status when the availability changes. -->
+
+            <!-- FLAT-05 -->
+            <article id="FLAT-05" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="" alt="" />
+                    <span class="flat-number">Flat 05</span>
+                    <span class="status">Occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,250 <span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - 1 <b>·</b> 2 bedrooms <b>·</b> 1 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A bright, front-facing first-floor flat with an attached balcony
+                        for fresh air and everyday relaxation. Its elevated position
+                        offers a pleasant outlook, natural light, and a sense of openness.
+                        Ideal for comfortable living with the added benefit of a private
+                        outdoor space.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Front-Facing View · Attached Balcony ·
+                            Natural Light
+                        </p>
+                    </details>
+                    <p class="flat-action"><a href="#contact">Currently occupied</a></p>
+                </div>
+            </article>
+            <!-- FLAT-05 -->
+
+            <!-- Change only data-status when the availability changes. -->
+
+            <!-- FLAT-06 -->
+            <article id="FLAT-06" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="" alt="" />
+                    <span class="flat-number">Flat 06</span>
+                    <span class="status">occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,620 <span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - 1 <b>·</b> 2 bedroom <b>·</b> 1 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A peaceful first-floor flat set away from the front for added
+                        privacy and quiet living. Its practical layout provides a
+                        comfortable space for everyday needs. Ideal for those seeking a
+                        calm home in a convenient location.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Quiet Location · First-Floor Living ·
+                            Practical Layout · Peaceful Surroundings
+                        </p>
+                    </details>
+                    <p class="flat-action">
+                        <a href="#contact">Currently occupied</a>
+                        <!-- Enquire about this flat -->
+                    </p>
+                </div>
+            </article>
+            <!-- FLAT-06 -->
+
+            <!-- Change only data-status when the availability changes. -->
+
+            <!-- FLAT-07 -->
+            <article id="flat-07" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="" alt="" />
+                    <span class="flat-number">Flat 07</span>
+                    <span class="status">occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,620 <span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - 1 <b>·</b> 2 bedrooms <b>·</b> 1 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A well-separated first-floor flat featuring a private balcony with
+                        a peaceful pond view. The open outlook brings fresh air, natural
+                        light, and a calming atmosphere. Ideal for comfortable living with
+                        added privacy and scenic surroundings.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Pond View · Private Balcony · Natural
+                            Light · Peaceful Surroundings
+                        </p>
+                    </details>
+                    <p class="flat-action">
+                        <a href="#contact">Currently occupied</a>
+                    </p>
+                </div>
+            </article>
+            <!-- FLAT-07 -->
+
+            <!-- FLAT-08 -->
+            <article id="flat-08" class="flat-card" data-status="occupied">
+                <div class="flat-image">
+                    <img src="" alt="" />
+                    <span class="flat-number">Flat 08</span>
+                    <span class="status">occupied</span>
+                </div>
+                <div class="flat-content">
+                    <!-- <p class="flat-price">£1,620 <span>/mo</span></p> -->
+                    <p class="flat-details">
+                        Floor - 1 <b>·</b> 2 bedrooms <b>·</b> 1 bathroom <b>·</b> xxx ft²
+                    </p>
+                    <p class="flat-description">
+                        A well-separated first-floor flat with two private balconies for
+                        added comfort and openness. One balcony overlooks the peaceful
+                        pond, while the other offers a lively street view. It combines
+                        natural light, fresh air, privacy, and pleasant views from both
+                        sides.
+                    </p>
+                    <details class="flat-features">
+                        <summary>Features</summary>
+                        <p>
+                            Two-Wheeler Parking · Two Balconies · Pond View · Street View ·
+                            Natural Light
+                        </p>
+                    </details>
+                    <p class="flat-action">
+                        <a href="#contact">Currently occupied</a>
+                        <!-- Enquire about this flat -->
+                    </p>
+                </div>
+            </article>
+            <!-- FLAT-08 -->
+        </div>
+    </section>
+
+    <section class="amenities-section" id="amenities" aria-labelledby="amenities-heading">
+        <div class="amenities-intro">
+            <p class="amenities-kicker">Everyday convenience</p>
+            <h2 id="amenities-heading">
+                Thoughtful amenities,<br />made for living well.
+            </h2>
+            <p>
+                Practical features and nearby essentials that make every day a little
+                easier.
+            </p>
+        </div>
+
+        <div class="amenities-grid">
+            <article class="amenity-card">
+                <span class="amenity-number">01</span>
+                <h3>Two-Wheeler Parking</h3>
+                <p>
+                    Dedicated space for
+                    <span class="highlight-text">one two-wheeler</span>, offering
+                    convenient everyday parking.
+                </p>
+            </article>
+
+            <article class="amenity-card">
+                <span class="amenity-number">02</span>
+                <h3>Healthcare & Diagnostics Nearby</h3>
+                <p>
+                    A healthcare and diagnostic centre is
+                    <span class="highlight-text">located beside the property</span>,
+                    providing convenient access to everyday medical services.
+                </p>
+            </article>
+
+            <article class="amenity-card">
+                <span class="amenity-number">03</span>
+                <h3>Quiet Surroundings</h3>
+                <p>
+                    A calm residential setting designed for
+                    <span class="highlight-text">comfortable and peaceful</span>
+                    living.
+                </p>
+            </article>
+
+            <article class="amenity-card">
+                <span class="amenity-number">04</span>
+                <h3>Hutton Road Market</h3>
+                <p>
+                    Hutton Road Market is
+                    <span class="highlight-text">just 400 m away</span>, making daily
+                    shopping and essential purchases easily accessible.
+                </p>
+            </article>
+
+            <article class="amenity-card">
+                <span class="amenity-number">05</span>
+                <h3>Hospital Nearby</h3>
+                <p>
+                    Asansol District Hospital is located
+                    <span class="highlight-text">approximately 1.6 km</span> from the
+                    property, providing convenient access to essential healthcare
+                    services.
+                </p>
+            </article>
+
+            <article class="amenity-card amenity-card--featured">
+                <span class="amenity-number">06</span>
+                <h3>Main Market Nearby</h3>
+                <p>
+                    Asansol Main Market is
+                    <span class="highlight-text">just 1.1 km away</span>, offering easy
+                    access to daily shopping, groceries, and essential needs.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <!-- Left Content -->
+        <div class="contact-info">
+            <h1>
+                Begin your<br />
+                <em>enquiry</em>
+            </h1>
+
+            <p class="intro-text">
+                We respond to all enquiries within one business day. For viewings, we
+                ask for a little advance notice to ensure the flat is presented at its
+                best.
+            </p>
+
+            <div class="contact-details">
+                <div class="detail">
+                    <span>ADDRESS</span>
+                    <p>Hutton road, Asansol, West Bengal 713301</p>
+                </div>
+
+                <div class="detail">
+                    <span>EMAIL</span>
+                    <p>mdahtesham911@gmail.com</p>
+                </div>
+
+                <div class="detail">
+                    <span>INDIA PHONE</span>
+                    <p>+91 8388040862</p>
+                </div>
+
+                <div class="detail">
+                    <span>VIEWINGS</span>
+                    <p>Monday–Saturday , 10 am – 8 pm</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <!-- Form -->
+        <div class="contact-form">
+            <h2>Send an enquiry</h2>
+
+            <form action="https://formsubmit.co/mdahtesham911@gmail.com" method="POST">
+                <!-- FormSubmit settings -->
+                <input type="hidden" name="_subject" value="New Enquiry - kalam's flat" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_captcha" value="false" />
+
+                <!-- After submission, redirect back to your website -->
+                <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" /> -->
+
+                <!-- NAME + EMAIL -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name"> NAME <b class="imp">*</b> </label>
+
+                        <input type="text" id="name" name="Name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"> EMAIL <b class="imp">*</b> </label>
+
+                        <input type="email" id="email" name="Email" required />
+                    </div>
+                </div>
+
+                <!-- PHONE -->
+                <div class="form-group phone-group">
+                    <label for="phone"> PHONE (INDIA) <b class="imp">*</b> </label>
+
+                    <div class="phone-input">
+                        <span class="country-code">IN</span>
+
+                        <span class="prefix">+91</span>
+
+                        <input type="tel" id="phone" name="Phone" required />
+                    </div>
+
+                    <small>Format: +91 XXXXX XXXXX</small>
+                </div>
+
+                <!-- FLAT -->
+                <div class="form-group">
+                    <label for="flat"> FLAT OF INTEREST </label>
+
+                    <select id="flat" name="Flat of Interest">
+                        <option value="Any / not sure yet">Any / not sure yet</option>
+
+                        <option value="Flat 1">Flat 1 - G</option>
+
+                        <option value="Flat 2">Flat 2 - G</option>
+
+                        <option value="Flat 3">Flat 3 - G</option>
+
+                        <option value="Flat 1">Flat 4 - G</option>
+
+                        <option value="Flat 2">Flat 5 - 1st</option>
+
+                        <option value="Flat 3">Flat 6 - 1st</option>
+
+                        <option value="Flat 2">Flat 7 - 1st</option>
+
+                        <option value="Flat 3">Flat 8 - 1st</option>
+                    </select>
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="form-group">
+                    <label for="message"> MESSAGE <b class="imp">*</b> </label>
+
+                    <textarea id="message" name="Message" rows="6" required></textarea>
+                </div>
+
+                <!-- SUBMIT -->
+                <button type="submit">Send enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <span class="footer-logo">Kalam's Flat</span>
+            <span class="copyright">© 2026 — All rights reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>

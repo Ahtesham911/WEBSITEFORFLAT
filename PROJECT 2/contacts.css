@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #f7f5f0;
+    color: #171716;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+
+    border-top: 1px solid #ddd8d0;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.contact-info {
+    padding: 80px 5vw 80px 1.1vw;
+
+    border-right: 1px solid #ddd8d0;
+}
+
+
+.contact-info h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3.5rem, 5.2vw, 5.5rem);
+    font-weight: 400;
+    line-height: 0.98;
+
+    margin-top: -5px;
+    margin-bottom: 42px;
+
+    letter-spacing: -0.04em;
+}
+
+
+.contact-info h1 em {
+    font-weight: 400;
+}
+
+
+/* Intro paragraph */
+
+.intro-text {
+    max-width: 650px;
+
+    font-size: 17px;
+    line-height: 1.65;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+.detail span {
+    display: block;
+
+    color: #aaa39a;
+
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+
+    margin-bottom: 7px;
+}
+
+
+.detail p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   RIGHT SIDE / FORM
+========================= */
+
+.contact-form {
+    padding: 30px 5.1vw 30px 2.7vw;
+}
+
+
+.contact-form h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    margin-top: -5px;
+    margin-bottom: 32px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+
+    color: #3d3a36;
+}
+
+
+.form-group label b {
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #d8d3cb;
+
+    background: #fff;
+
+    border-radius: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+
+    outline: none;
+
+    transition: border-color 0.2s;
+}
+
+
+.form-group input,
+.form-group select {
+    height: 56px;
+    padding: 0 20px;
+}
+
+
+.form-group textarea {
+    padding: 15px 20px;
+
+    min-height: 134px;
+
+    resize: vertical;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #777;
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+.phone-input {
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #d8d3cb;
+
+    background: #fff;
+}
+
+
+.country-code {
+    padding: 0 16px;
+
+    font-family: monospace;
+    font-size: 13px;
+
+    color: #555;
+
+    border-right: 1px solid #eee;
+}
+
+
+.prefix {
+    padding: 0 14px;
+
+    font-size: 16px;
+}
+
+
+.phone-input input {
+    height: 100%;
+
+    border: none !important;
+
+    padding: 0 5px !important;
+
+    outline: none;
+}
+
+
+.phone-group small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #aaa39a;
+
+    font-family: monospace;
+    font-size: 12px;
+}
+
+
+/* =========================
+   SELECT
+========================= */
+
+select {
+    appearance: auto;
+    cursor: pointer;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-form button {
+    width: 100%;
+    height: 59px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    background: #191918;
+    color: #fff;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+
+.contact-form button:hover {
+    background: #333330;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        display: block;
+
+        min-height: auto;
+    }
+
+
+    .contact-info {
+        padding: 50px 25px 50px;
+
+        border-right: none;
+        border-bottom: 1px solid #ddd8d0;
+    }
+
+
+    .contact-info h1 {
+        font-size: clamp(3rem, 15vw, 4.5rem);
+
+        margin-bottom: 30px;
+    }
+
+
+    .intro-text {
+        font-size: 15px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .contact-details {
+        gap: 24px;
+    }
+
+
+    .contact-form {
+        padding: 45px 25px 50px;
+    }
+
+
+    .contact-form h2 {
+        font-size: 28px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+
+    .form-group input,
+    .form-group select,
+    .phone-input {
+        height: 52px;
+    }
+
+
+    .form-group textarea {
+        min-height: 120px;
+    }
+
+
+    .contact-form button {
+        height: 55px;
+    }
+
+    .imp{
+        color: red;
+    }
+
+}

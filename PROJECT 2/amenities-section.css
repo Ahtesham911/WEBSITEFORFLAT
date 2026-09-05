@@ -1,0 +1,184 @@
+.amenities-section {
+  padding: clamp(64px, 9vw, 128px) 5%;
+  background: #211e1a;
+  color: #f7f3e3;
+}
+
+.amenities-intro {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.75fr) minmax(280px, 2fr) minmax(
+      220px,
+      1fr
+    );
+  gap: 28px;
+  align-items: end;
+  max-width: 1400px;
+  margin: 0 auto clamp(38px, 5vw, 68px);
+}
+
+.amenities-kicker,
+.amenity-number,
+.highlight-text{
+  color: #d88443;
+  font: 700 0.72rem/1 monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.amenities-kicker {
+  margin: 0 0 5px;
+}
+
+.amenities-intro h2 {
+  margin: 0;
+  color: #fffaf0;
+  font:
+    400 clamp(2.8rem, 5vw, 5.2rem)/0.95 Georgia,
+    serif;
+  letter-spacing: -0.05em;
+}
+
+.amenities-intro > p:last-child {
+  max-width: 310px;
+  margin: 0 0 3px;
+  color: #c4b9aa;
+  font:
+    0.98rem/1.65 system-ui,
+    sans-serif;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 1400px;
+  margin: auto;
+  border-top: 1px solid rgba(247, 243, 227, 0.18);
+  border-left: 1px solid rgba(247, 243, 227, 0.18);
+}
+
+.amenity-card {
+  position: relative;
+  min-height: 260px;
+  padding: clamp(26px, 3vw, 40px);
+  overflow: hidden;
+  border-right: 1px solid rgba(247, 243, 227, 0.18);
+  border-bottom: 1px solid rgba(247, 243, 227, 0.18);
+  background: #211e1a;
+  transition:
+    background 240ms ease,
+    transform 240ms ease;
+}
+
+.amenity-card::after {
+  position: absolute;
+  right: -22px;
+  bottom: -35px;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(216, 132, 67, 0.45);
+  border-radius: 50%;
+  content: "";
+  opacity: 0;
+  transform: scale(0.65);
+  transition:
+    opacity 240ms ease,
+    transform 320ms ease;
+}
+
+.amenity-card:hover {
+  z-index: 1;
+  background: #2d2924;
+  transform: translateY(-5px);
+}
+
+.amenity-card:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.amenity-card--featured {
+  grid-column: span 2;
+  /* background: #2a2722; */
+}
+
+.amenity-number {
+  display: block;
+  margin-bottom: clamp(38px, 5vw, 62px);
+}
+
+.amenity-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 16px;
+  color: #fffaf0;
+  font:
+    400 clamp(1.45rem, 2vw, 2rem)/1.08 Georgia,
+    serif;
+  letter-spacing: -0.025em;
+}
+
+.amenity-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 31ch;
+  margin: 0;
+  color: #c4b9aa;
+  font:
+    0.95rem/1.65 system-ui,
+    sans-serif;
+}
+
+@media (max-width: 900px) {
+  .amenities-intro {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .amenities-intro > p:last-child {
+    grid-column: 2;
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .amenities-section {
+    padding: 64px 16px;
+  }
+
+  .amenities-intro {
+    display: block;
+    margin-bottom: 38px;
+  }
+
+  .amenities-kicker {
+    margin-bottom: 18px;
+  }
+
+  .amenities-intro h2 {
+    margin-bottom: 20px;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amenity-card,
+  .amenity-card--featured {
+    grid-column: auto;
+    min-height: 0;
+    padding: 28px 24px 30px;
+  }
+
+  .amenity-number {
+    margin-bottom: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .amenity-card,
+  .amenity-card::after {
+    transition: none;
+  }
+}
