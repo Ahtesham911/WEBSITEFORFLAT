@@ -1,7 +1,7 @@
 .overall-stats {
   padding: 28px 14px;
   background:
-    radial-gradient(circle at top left, #5a5353, transparent 55%),
+    radial-gradient(circle at top left, var(--tirsery-colour), transparent 55%),
     linear-gradient(135deg, var(--secondary-colour), #16110d);
 }
 
@@ -38,6 +38,7 @@
 .stats h3 {
   margin: 0 0 8px;
   color: var(--white-colour);
+  font-family: var(--font-serif);
   font-size: clamp(2rem, 7vw, 5rem);
   line-height: 1;
 }
