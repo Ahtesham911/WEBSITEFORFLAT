@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
 :root {
-  --primary-colour: #af9164;
+  --primary-colour: #b8935f;
   --secondary-colour: #2b2118;
   --tirsery-colour: #5a5353;
   --grey-colour: #b3b6b7;
-  --white-colour: #f7f3e3;
+  --white-colour: #f5f2ea;
+  --accent-2: #1f3d2f;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
 }
 
 html {
@@ -22,17 +32,20 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 18px 7%;
-  background: var(--white-colour);
-  border-bottom: 1px solid #e7e7e7;
+  background: rgba(245, 242, 234, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(43, 33, 24, 0.08);
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
 }
 
 nav h1 {
   margin: 0;
-  color: black;
+  color: var(--secondary-colour);
+  font-family: var(--font-serif);
   font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 nav ul {
@@ -96,6 +109,9 @@ nav ul a:hover::after {
   overflow: hidden;
   margin-bottom: 34px;
   border-radius: 24px;
+  border: 1px solid rgba(184, 147, 95, 0.5);
+  outline: 8px solid rgba(184, 147, 95, 0.08);
+  outline-offset: -1px;
   background: #1b1b1b;
 }
 
@@ -118,7 +134,7 @@ nav ul a:hover::after {
 .hero-text {
   display: block;
   margin-bottom: 18px;
-  font-family: Georgia, serif;
+  font-family: var(--font-serif);
   font-size: clamp(2.4rem, 6vw, 5.5rem);
   font-weight: 500;
   line-height: 0.92;
@@ -140,13 +156,16 @@ nav ul a:hover::after {
 }
 
 .btn-group button {
-  padding: 14px 20px;
+  padding: 16px 26px;
   border: 1px solid var(--secondary-colour);
-  border-radius: 999px;
+  border-radius: 4px;
   background: var(--secondary-colour);
   color: #fff;
   font: inherit;
   font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   cursor: pointer;
   transition: 0.2s ease;
 }
@@ -158,6 +177,12 @@ nav ul a:hover::after {
 
 .btn-group button:hover {
   transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(43, 33, 24, 0.18);
+}
+
+.btn-group button:last-child:hover {
+  background: var(--secondary-colour);
+  color: #fff;
 }
 
 
