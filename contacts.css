@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
-
+/* Font import now lives in app.css to avoid loading it twice */
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-
 body {
-    background: #f7f5f0;
-    color: #171716;
-    font-family: "DM Sans", sans-serif;
+    background: var(--white-colour);
+    color: var(--secondary-colour);
+    font-family: var(--font-sans);
 }
 
 
@@ -42,7 +39,7 @@ body {
 
 
 .contact-info h1 {
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-serif);
     font-size: clamp(3.5rem, 5.2vw, 5.5rem);
     font-weight: 400;
     line-height: 0.98;
@@ -111,7 +108,7 @@ body {
 
 
 .contact-form h2 {
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-serif);
 
     font-size: 30px;
     font-weight: 400;
@@ -169,7 +166,7 @@ body {
 
     border-radius: 0;
 
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-sans);
     font-size: 16px;
 
     outline: none;
@@ -281,12 +278,14 @@ select {
 
     border: none;
 
-    background: #191918;
+    background: var(--secondary-colour);
     color: #fff;
 
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-sans);
     font-size: 15px;
     font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
     cursor: pointer;
 
@@ -295,7 +294,7 @@ select {
 
 
 .contact-form button:hover {
-    background: #333330;
+    background: var(--primary-colour);
 }
 
 
